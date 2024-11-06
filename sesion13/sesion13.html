@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría y Ejercicios de Funciones en JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Funciones en JavaScript</h1>
+        <p>Conoce la teoría y práctica de funciones en JavaScript.</p>
+    </header>
+
+    <section>
+        <h2>¿Qué es una Función?</h2>
+        <p>Una función en JavaScript es un bloque de código reutilizable que realiza una tarea específica. Las funciones nos ayudan a organizar el código, mejorar su legibilidad y simplificar el mantenimiento.</p>
+    </section>
+
+    <section>
+        <h2>Estructura de una Función</h2>
+        <p>La estructura básica de una función incluye la palabra clave <code>function</code>, el nombre de la función, los parámetros opcionales y el cuerpo de la función entre llaves:</p>
+        <pre><code>function nombreDeLaFuncion(parametro1, parametro2) {
+    // Código de la función
+    return resultado;
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Tipos de Funciones</h2>
+        <h3>1. Función Declarativa</h3>
+        <pre><code>function saludar(nombre) {
+    return "Hola, " + nombre;
+}</code></pre>
+
+        <h3>2. Función Expresiva o Anónima</h3>
+        <pre><code>const saludar = function(nombre) {
+    return "Hola, " + nombre;
+};</code></pre>
+
+        <h3>3. Función Flecha</h3>
+        <pre><code>const sumar = (a, b) => a + b;</code></pre>
+    </section>
+
+    <section>
+        <h2>Ejercicios Prácticos</h2>
+
+        <h3>Ejercicio 1: Multiplicación</h3>
+        <p>Crea una función <code>multiplicar</code> que acepte dos números y devuelva su producto:</p>
+        <pre><code>function multiplicar(a, b) {
+    return a * b;
+}</code></pre>
+
+        <h3>Ejercicio 2: Verificar Números Pares</h3>
+        <p>Crea una función <code>esPar</code> que devuelva <code>true</code> si un número es par y <code>false</code> si es impar:</p>
+        <pre><code>function esPar(numero) {
+    return numero % 2 === 0;
+}</code></pre>
+
+        <h3>Ejercicio 3: Conversión a Mayúsculas</h3>
+        <p>Crea una función <code>convertirAMayusculas</code> que reciba una cadena de texto y devuelva la misma cadena en mayúsculas:</p>
+        <pre><code>function convertirAMayusculas(texto) {
+    return texto.toUpperCase();
+}</code></pre>
+
+        <h3>Ejercicio 4: Factorial de un Número</h3>
+        <p>Usa una función recursiva llamada <code>factorial</code> para calcular el factorial de un número:</p>
+        <pre><code>function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}</code></pre>
+
+        <h3>Ejercicio 5: Calculadora</h3>
+        <p>Implementa una función <code>calculadora</code> que pueda realizar operaciones básicas según el operador proporcionado:</p>
+        <pre><code>function calculadora(a, b, operador) {
+    switch (operador) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return b !== 0 ? a / b : "Error: División por cero";
+        default:
+            return "Operador no válido";
+    }
+}</code></pre>
+    </section>
+</body>
+</html>
